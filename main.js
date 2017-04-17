@@ -16,6 +16,7 @@ app.get('/calculator/:domain', (req,res) =>{
     getCompanyID(domain, (err,average,numberOfReviews) =>{
         if(!err){
             var obj = new Object
+            obj.domain = domain
             obj.averageGrade = average
             obj.numberOfReviews = numberOfReviews
             res.json(obj)
