@@ -1,0 +1,11 @@
+{
+    "apps" : [{
+    "name" : "trustpilot" ,
+    "script" : "main.js" ,
+    "watch" : true ,
+    "env" : {
+        "NODE_ENV" : "development" ,
+        "IP" : "0.0.0.0" 
+            }
+            }]
+}
